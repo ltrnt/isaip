@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80a6bcf9-8966-412f-abf4-d83bfd0ac80f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task1/HashChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task1/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task1/datamodel/FileH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task1/datamodel/FolderH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/task1/targetFolder/File1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task1/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task1/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +47,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -104,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675109247188</updated>
-      <workItem from="1675109249742" duration="5389000" />
+      <workItem from="1675109249742" duration="5661000" />
     </task>
     <servers />
   </component>
