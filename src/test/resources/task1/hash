@@ -1,0 +1,9 @@
+{
+  "files" : [ {
+    "path" : "src/test/resources/task1/targetFolder/subFolder/subFile.txt",
+    "hash" : 1809
+  }, {
+    "path" : "src/test/resources/task1/targetFolder/File1.txt",
+    "hash" : 27946
+  } ]
+}
