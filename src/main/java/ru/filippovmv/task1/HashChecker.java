@@ -14,9 +14,9 @@ import java.util.Set;
 
 public class HashChecker {
 
-    private static final String TARGET_DEFAULT_CATALOG_PATH = "src/test/resources/task1/targetFolder"; // TODO Fill default path
-    private static final String DEFAULT_HASH_PATH = "src/test/resources/task1/hash"; // TODO Fill default path
-    private static final String ENCODING = "KOI8-R"; // TODO Fill default path
+    private static final String TARGET_DEFAULT_CATALOG_PATH = "src/test/resources/task1/targetFolder";
+    private static final String DEFAULT_HASH_PATH = "src/test/resources/task1/hash";
+    private static final String ENCODING = "KOI8-R";
 
     public static void calculateHashAndWriteToFile(String targetPath, String hashPath) {
         Set<FileH> files = new HashSet<>();
