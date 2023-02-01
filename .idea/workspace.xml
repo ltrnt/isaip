@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80a6bcf9-8966-412f-abf4-d83bfd0ac80f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task3/Decoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task3/Encoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task3/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/task3/container.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/task3/containerBackup.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/task3/secret.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/task3/secretOutput.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task4/Decoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task4/Encoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task4/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/task4/container.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/task4/containerBackup.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/task4/secret.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -55,7 +54,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/Users/maximfilippov/Projects/isaip/src/test/resources/task3",
+    "last_opened_file_path": "/Users/maximfilippov/Projects/isaip/src/test/resources/task4",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -64,6 +63,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/task4" />
+      <recent name="$PROJECT_DIR$/src/main/java/ru/filippovmv/task4" />
       <recent name="$PROJECT_DIR$/src/test/resources/task3" />
       <recent name="$PROJECT_DIR$/src/test/resources/task2" />
     </key>
@@ -74,7 +75,7 @@
       <recent name="ru.filippovmv.task3" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ru.filippovmv.task3.Task">
+  <component name="RunManager" selected="Application.ru.filippovmv.task4.Task">
     <configuration name="Task" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.filippovmv.task1.Task" />
       <module name="isaip.main" />
@@ -114,8 +115,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ru.filippovmv.task4.Task" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.filippovmv.task4.Task" />
+      <module name="isaip.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.filippovmv.task4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ru.filippovmv.task4.Task" />
         <item itemvalue="Application.ru.filippovmv.task3.Task" />
         <item itemvalue="Application.ru.filippovmv.task2.Task" />
         <item itemvalue="Application.Task" />
@@ -133,6 +148,7 @@
       <workItem from="1675109249742" duration="11862000" />
       <workItem from="1675191645134" duration="9754000" />
       <workItem from="1675240267838" duration="2534000" />
+      <workItem from="1675268653356" duration="2987000" />
     </task>
     <servers />
   </component>
