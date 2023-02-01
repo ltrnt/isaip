@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80a6bcf9-8966-412f-abf4-d83bfd0ac80f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task4/Decoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task4/Encoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task4/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/task4/container.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/task4/containerBackup.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/task4/secret.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task5/Endecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task5/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task6/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task6/datamodel/FileH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/filippovmv/task6/datamodel/Folder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,11 +69,14 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources/task1/targetFolder" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.filippovmv.task6" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.filippovmv.task3" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ru.filippovmv.task4.Task">
+  <component name="RunManager" selected="Application.ru.filippovmv.task5.Task">
     <configuration name="Task" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.filippovmv.task1.Task" />
       <module name="isaip.main" />
@@ -128,8 +129,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ru.filippovmv.task5.Task" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.filippovmv.task5.Task" />
+      <module name="isaip.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.filippovmv.task5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ru.filippovmv.task5.Task" />
         <item itemvalue="Application.ru.filippovmv.task4.Task" />
         <item itemvalue="Application.ru.filippovmv.task3.Task" />
         <item itemvalue="Application.ru.filippovmv.task2.Task" />
@@ -148,7 +163,7 @@
       <workItem from="1675109249742" duration="11862000" />
       <workItem from="1675191645134" duration="9754000" />
       <workItem from="1675240267838" duration="2534000" />
-      <workItem from="1675268653356" duration="2987000" />
+      <workItem from="1675268653356" duration="4074000" />
     </task>
     <servers />
   </component>
