@@ -12,6 +12,7 @@ public class Encoder {
 
     public static final Map<Character, Character> analogs = new HashMap<>();
     public static final String DEFAULT_CONTAINER_PATH = "src/test/resources/task4/container.txt";
+    public static final String DEFAULT_CONTAINER_SECRET_PATH = "src/test/resources/task4/containerWithSecret.txt";
     public static final String DEFAULT_SECRET_PATH = "src/test/resources/task4/secret.txt";
     private static final String ENCODING = "KOI8-R";
 
@@ -81,7 +82,7 @@ public class Encoder {
                 System.out.println(secretByte + " " + convertedSecretByte + " " + secretString.charAt(i) + " " + secretByteToBitsString);
             }
 
-            Files.writeString(container.toPath(), containerString.toString(), Charset.forName(ENCODING));
+            Files.writeString(new File(DEFAULT_CONTAINER_SECRET_PATH).toPath(), containerString.toString(), Charset.forName(ENCODING));
             System.out.println("Encoded.");
 
         } catch (NullPointerException e) {

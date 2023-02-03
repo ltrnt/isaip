@@ -6,18 +6,17 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Decoder {
 
-    public static final String DEFAULT_CONTAINER_PATH = "src/test/resources/task2/container.txt";
+    public static final String DEFAULT_CONTAINER_SECRET_PATH = "src/test/resources/task2/containerWithSecret.txt";
     public static final String DEFAULT_SECRET_PATH = "src/test/resources/task2/secretOutput.txt";
     private static final String ENCODING = "KOI8-R";
 
     public static void decode() throws IOException {
         try {
             File secretFile = new File(DEFAULT_SECRET_PATH);
-            File container = new File(DEFAULT_CONTAINER_PATH);
+            File container = new File(DEFAULT_CONTAINER_SECRET_PATH);
             List<String> containerStrings = Files.readAllLines(container.toPath(), Charset.forName(ENCODING));
             List<String> bitsOfEncodedSecret = new ArrayList<>();
 
@@ -49,7 +48,6 @@ public class Decoder {
 
             System.out.println();
 
-//            List<Integer> bytes = new ArrayList<>();
             StringBuilder result = new StringBuilder();
             for (String secretBits : bitsOfEncodedSecret) {
                 int secretByte = 0;
@@ -67,49 +65,6 @@ public class Decoder {
             System.out.println(result);
 
             Files.writeString(secretFile.toPath(), result.toString(), Charset.forName(ENCODING));
-
-//            List<Byte> resultBytes = bytes.stream().map(b1te -> {
-//                if (b1te > 128) {
-//                    return (Byte) (byte) (b1te - 256);
-//                }
-//                return (Byte) (byte) b1te.intValue();
-//            }).collect(Collectors.toList());
-
-
-
-
-//            int containerPosition = 0;
-//            for(int i = 0; i < secretByteArray.length; i++) {
-//                int secretByte = secretByteArray[i];
-//                int convertedSecretByte = secretByte;
-//                if (secretByte < 0) {
-//                    convertedSecretByte = (256 + secretByte);
-//                }
-//
-//                StringBuilder secretByteToBitsString = new StringBuilder();
-//                int temp = convertedSecretByte;
-//                while (temp > 0) {
-//                    secretByteToBitsString.append(temp % 2);
-//                    temp /= 2;
-//                }
-//
-//                if (secretByteToBitsString.length() < 8) {
-//                    secretByteToBitsString.append("0");
-//                }
-//
-//                String resultBitString = secretByteToBitsString.reverse().toString();
-//
-//                for (int bitPosition = 0; bitPosition < resultBitString.length(); bitPosition++, containerPosition++) {
-//                    if (resultBitString.charAt(bitPosition) == '1') {
-//                        containerStrings.set(containerPosition, containerStrings.get(containerPosition) + " ");
-//                    }
-//                }
-//                System.out.println(secretByte + " " + convertedSecretByte + " " + secretString.charAt(i) + " " + secretByteToBitsString);
-//            }
-//
-//            Files.write(container.toPath(), containerStrings, Charset.forName(ENCODING));
-//            System.out.println("Encoded.");
-
         } catch (Exception e) {
             System.out.println(e);
         }

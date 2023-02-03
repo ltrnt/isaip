@@ -9,6 +9,7 @@ import java.util.List;
 public class Encoder {
 
     public static final String DEFAULT_CONTAINER_PATH = "src/test/resources/task3/container.txt";
+    public static final String DEFAULT_CONTAINER_SECRET_PATH = "src/test/resources/task3/containerWithSecret.txt";
     public static final String DEFAULT_SECRET_PATH = "src/test/resources/task3/secret.txt";
     private static final String ENCODING = "KOI8-R";
 
@@ -68,7 +69,7 @@ public class Encoder {
                 System.out.println(secretByte + " " + convertedSecretByte + " " + secretString.charAt(i) + " " + secretByteToBitsString);
             }
 
-            Files.writeString(container.toPath(), containerString, Charset.forName(ENCODING));
+            Files.writeString(new File(DEFAULT_CONTAINER_SECRET_PATH).toPath(), containerString, Charset.forName(ENCODING));
             System.out.println("Encoded.");
 
         } catch (Exception e) {

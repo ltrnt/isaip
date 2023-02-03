@@ -12,7 +12,7 @@ import java.util.Map;
 public class Decoder {
 
     public static final Map<Character, Character> analogs = new HashMap<>();
-    public static final String DEFAULT_CONTAINER_PATH = "src/test/resources/task4/container.txt";
+    public static final String DEFAULT_CONTAINER_SECRET_PATH = "src/test/resources/task4/containerWithSecret.txt";
     public static final String DEFAULT_SECRET_PATH = "src/test/resources/task4/secretOutput.txt";
     private static final String ENCODING = "KOI8-R";
 
@@ -40,7 +40,7 @@ public class Decoder {
     public static void decode() {
         try {
             File secretFile = new File(DEFAULT_SECRET_PATH);
-            File container = new File(DEFAULT_CONTAINER_PATH);
+            File container = new File(DEFAULT_CONTAINER_SECRET_PATH);
             String containerString = Files.readString(container.toPath(), Charset.forName(ENCODING));
             List<String> bitsOfEncodedSecret = new ArrayList<>();
 

@@ -5,15 +5,19 @@
     <file url="file://$PROJECT_DIR$/src/test/resources/task1/targetFolder/subFolder/subFile1.txt" charset="KOI8-R" />
     <file url="file://$PROJECT_DIR$/src/test/resources/task2/container.txt" charset="KOI8-R" />
     <file url="file://$PROJECT_DIR$/src/test/resources/task2/containerBackup.txt" charset="KOI8-R" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/task2/containerWithSecret.txt" charset="KOI8-R" />
     <file url="file://$PROJECT_DIR$/src/test/resources/task2/secret.txt" charset="KOI8-R" />
     <file url="file://$PROJECT_DIR$/src/test/resources/task2/secretOutput.txt" charset="KOI8-R" />
     <file url="file://$PROJECT_DIR$/src/test/resources/task3/container.txt" charset="KOI8-R" />
     <file url="file://$PROJECT_DIR$/src/test/resources/task3/containerBackup.txt" charset="KOI8-R" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/task3/containerWithSecret.txt" charset="KOI8-R" />
     <file url="file://$PROJECT_DIR$/src/test/resources/task3/secret.txt" charset="KOI8-R" />
     <file url="file://$PROJECT_DIR$/src/test/resources/task3/secretOutput.txt" charset="KOI8-R" />
     <file url="file://$PROJECT_DIR$/src/test/resources/task4/container.txt" charset="KOI8-R" />
     <file url="file://$PROJECT_DIR$/src/test/resources/task4/containerBackup.txt" charset="KOI8-R" />
     <file url="file://$PROJECT_DIR$/src/test/resources/task4/secret.txt" charset="KOI8-R" />
     <file url="file://$PROJECT_DIR$/src/test/resources/task4/secretOutput.txt" charset="KOI8-R" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/task6/targetFolder/File1.txt" charset="KOI8-R" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/task6/targetFolder/subFolder/subFile1.txt" charset="KOI8-R" />
   </component>
 </project>

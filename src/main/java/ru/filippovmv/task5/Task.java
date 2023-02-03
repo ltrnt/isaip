@@ -5,6 +5,5 @@ public class Task {
         String encoded = Endecoder.encode("привет", "ключ");
         System.out.println("Encoded: " + encoded);
         System.out.println("Decoded: " + Endecoder.decode(encoded, "ключ"));
-
     }
 }

@@ -14,8 +14,20 @@ import java.util.Set;
 
 public class HashChecker {
 
+    /**
+     Измените данную константу, указав путь до целевой папки, хэш которой нужно посчитать.
+     Текущее значение указывает на тестовый пример, созданный мной. В файлах тестового примера используется кодировка KOI8-R.
+     Убедитесь, что Ваши тестовые файлы имеют такую же кодировку, либо укажите в константе ENCODING Вашу кодировку.
+     */
     private static final String TARGET_DEFAULT_CATALOG_PATH = "src/test/resources/task1/targetFolder";
+    /**
+     * Измените данную константу, указав путь до файла, в котором будет генерироваться хэш.
+     */
     private static final String DEFAULT_HASH_PATH = "src/test/resources/task1/hash";
+
+    /**
+     * Измените данную константу, если используете альтернативную кодировку.
+     */
     private static final String ENCODING = "KOI8-R";
 
     public static void calculateHashAndWriteToFile(String targetPath, String hashPath) {
@@ -30,6 +42,9 @@ public class HashChecker {
         }
     }
 
+    /**
+     * Проверка на соотвествие хэш-сумм сгенерированный файлов и сохраненных в файле.
+     */
     public static void checkHash(String targetPath, String hashPath) {
         Set<FileH> olderFilesH = readFromFile(hashPath).getFiles();
         Set<FileH> currentFilesH = new HashSet<>();
@@ -54,6 +69,9 @@ public class HashChecker {
         }
     }
 
+    /**
+     * Просто метод записивает структуру файлов и их хэш в указанный в DEFAULT_HASH_PATH файл.
+     */
     private static void writeToFile(Set<FileH> files, String hashPath) {
         File hashFile = new File(hashPath == null ? DEFAULT_HASH_PATH : hashPath);
 
@@ -70,6 +88,9 @@ public class HashChecker {
         }
     }
 
+    /**
+     * Метод считывает данный из файла, содержащего структуру каталога и хэш.
+     */
     private static FolderH readFromFile(String hashPath) {
         File hashFile = new File(hashPath == null ? DEFAULT_HASH_PATH : hashPath);
         String plainString;
@@ -103,6 +124,9 @@ public class HashChecker {
         return folderH;
     }
 
+    /**
+     * Алгоритм подсчета хэша.
+     */
     private static Integer hashOf(File target) {
         int hash = 0;
         byte[] file = new byte[0];
@@ -122,6 +146,9 @@ public class HashChecker {
         return hash;
     }
 
+    /**
+     * Рекурсивный обход каталога и его подкаталогов для подсчета хеш-суммы файлов.
+     */
     private static void recursiveHashCalculation(File target, Set<FileH> files) {
         File[] innerFiles = target.listFiles();
 

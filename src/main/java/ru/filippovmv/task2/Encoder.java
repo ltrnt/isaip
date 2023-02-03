@@ -2,21 +2,20 @@ package ru.filippovmv.task2;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.List;
 
 public class Encoder {
 
-    public static final String DEFAULT_CONTAINER_PATH = "src/test/resources/task2/container.txt";
+    public static final String DEFAULT_CONTAINER_EMPTY_PATH = "src/test/resources/task2/container.txt";
+    public static final String DEFAULT_CONTAINER_SECRET_PATH = "src/test/resources/task2/containerWithSecret.txt";
     public static final String DEFAULT_SECRET_PATH = "src/test/resources/task2/secret.txt";
     private static final String ENCODING = "KOI8-R";
 
     public static void encode() throws IOException {
         try {
-            File container = new File(DEFAULT_CONTAINER_PATH);
+            File container = new File(DEFAULT_CONTAINER_EMPTY_PATH);
             List<String> containerStrings = Files.readAllLines(container.toPath(), Charset.forName(ENCODING));
 
             File secretFile = new File(DEFAULT_SECRET_PATH);
@@ -60,7 +59,7 @@ public class Encoder {
                 System.out.println(secretByte + " " + convertedSecretByte + " " + secretString.charAt(i) + " " + secretByteToBitsString);
             }
 
-            Files.write(container.toPath(), containerStrings, Charset.forName(ENCODING));
+            Files.write(new File(DEFAULT_CONTAINER_SECRET_PATH).toPath(), containerStrings, Charset.forName(ENCODING));
             System.out.println("Encoded.");
 
         } catch (Exception e) {
